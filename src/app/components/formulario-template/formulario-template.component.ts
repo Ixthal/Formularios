@@ -21,13 +21,12 @@ export class FormularioTemplateComponent {
   };
 
   submited = false;
-  
   constructor(){
 
   }
 
   submit(){
-    console.log('Ejecutando submit');
-    this.submited = true;
+    console.log("ejecutando submit");
+    this.submited=true;
   }
 }
