@@ -1,7 +1,7 @@
 <div style="background-color: beige; margin-bottom: 20px;padding: 20px;">
     <form (ngSubmit)="submit()" #forma="ngForm">
         <label for="name"><b>Nombre de pila y apellido</b></label>
-        <input type="text" #name="ngModel" [(ngModel)]="register.name" placeholder="Introducir el nombre" name="name" minlength="5" class="form-control" required [ngClass]="{'is-valid': !name.invalid, 'is-invalid':name.invalid}">
+        <input type="text" #name="ngModel" [(ngModel)]="register.name" placeholder="Introducir el nombre" name="name" minlength="5" class="form-control" required [ngClass]="{'is-valid': !name.invalid, 'is-invalid':name.invalid && submited}">
 
             <div class="invalid-feedback" *ngIf="name.invalid && (name.dirty || name.touched)">
                 <div *ngIf="name.errors?.['minlength']">

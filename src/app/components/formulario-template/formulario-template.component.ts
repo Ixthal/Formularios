@@ -27,6 +27,6 @@ export class FormularioTemplateComponent {
 
   submit(){
     console.log("ejecutando submit");
-    this.submited=true;
+    this.submited = true;
   }
 }
